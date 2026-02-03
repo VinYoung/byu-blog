@@ -1,0 +1,65 @@
+/* Hide blog chrome when embedded via Wujie/iframe (embed=1).
+   Keep content + aside (TOC/categories/tags) visible. */
+
+/* Top navigation (Keep / Butterfly / common) */
+body.is-embed #nav,
+body.is-embed .header-wrapper,
+body.is-embed .menu-wrapper,
+body.is-embed .menu {
+  display: none !important;
+}
+
+/* Mobile sidebar menu (Butterfly) */
+body.is-embed #sidebar,
+body.is-embed #menu-mask,
+body.is-embed #toggle-menu {
+  display: none !important;
+}
+
+/* Give embedded pages a little top breathing room under host navbar */
+body.is-embed #body-wrap {
+  padding-top: 12px !important;
+}
+
+/* Prevent infinite iframe auto-resize loop while keeping the cover fully visible.
+   Use a width-based aspect-ratio (stable) instead of vh-based full-screen height. */
+body.is-embed #page-header {
+  height: auto !important;
+  min-height: 0 !important;
+  aspect-ratio: 16 / 9;
+  background-size: contain !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
+
+body.is-embed #body-wrap {
+  min-height: auto !important;
+}
+
+/* Floating buttons (Butterfly rightside etc.) */
+body.is-embed #rightside,
+body.is-embed .rightside {
+  display: none !important;
+}
+
+/* Footer (Keep / Butterfly / common) */
+body.is-embed #footer,
+body.is-embed footer,
+body.is-embed .footer-wrapper,
+body.is-embed .footer {
+  display: none !important;
+}
+
+body.is-embed .main-content,
+body.is-embed .content,
+body.is-embed .container,
+body.is-embed #content,
+body.is-embed #container,
+body.is-embed #body-wrap {
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+
+body.is-embed {
+  background: transparent !important;
+}
