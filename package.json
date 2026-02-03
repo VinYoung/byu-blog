@@ -6,6 +6,7 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
+    "import:md": "node scripts/import-md-to-post.mjs",
     "server": "hexo server"
   },
   "hexo": {
