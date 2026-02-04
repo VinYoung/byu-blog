@@ -19,7 +19,7 @@
   "dependencies": {
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1",
+    "multer": "^2.0.2",
     "@aws-sdk/client-s3": "^3.758.0",
     "hexo": "^8.0.0",
     "hexo-generator-archive": "^2.0.0",
