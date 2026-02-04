@@ -26,14 +26,55 @@ body.is-embed #body-wrap {
 body.is-embed #page-header {
   height: auto !important;
   min-height: 0 !important;
-  aspect-ratio: 16 / 9;
-  background-size: contain !important;
+  aspect-ratio: 16 / 9; /* default when there is no cover */
+  background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
+  overflow: hidden;
+  position: relative;
 }
 
 body.is-embed #body-wrap {
   min-height: auto !important;
+}
+
+/* When the post has a cover image, replace solid background with a nice adaptive cover:
+   - blurred "cover" fills the area (no blue bars)
+   - crisp "contain" layer keeps the whole cover visible
+   - JS sets --byu-cover-bg and aspect-ratio based on real image size */
+body.is-embed #page-header.byu-has-cover {
+  background-image: none !important;
+  background-color: transparent !important;
+}
+
+body.is-embed #page-header.byu-has-cover::before,
+body.is-embed #page-header.byu-has-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+body.is-embed #page-header.byu-has-cover::before {
+  background-image: var(--byu-cover-bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: blur(24px);
+  transform: scale(1.12);
+  opacity: 0.65;
+}
+
+body.is-embed #page-header.byu-has-cover::after {
+  background-image: var(--byu-cover-bg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+body.is-embed #page-header.byu-has-cover .page-header-inner {
+  position: relative;
+  z-index: 1;
 }
 
 /* Floating buttons (Butterfly rightside etc.) */

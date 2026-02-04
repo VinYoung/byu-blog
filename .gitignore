@@ -14,8 +14,11 @@ db.json
 # Node
 node_modules/
 
+# local env (do not commit secrets)
+.env
+.env.local
+
 # local cloned theme repos (not committed)
 themes/butterfly/
 themes/keep/
 themes/cactus/
-

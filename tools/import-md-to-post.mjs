@@ -3,7 +3,7 @@
  * Local-only helper: import an arbitrary Markdown file into Hexo `source/_posts`.
  *
  * Usage:
- *   node scripts/import-md-to-post.mjs /abs/path/to/file.md
+ *   node tools/import-md-to-post.mjs /abs/path/to/file.md
  *
  * Options:
  *   --title "Post Title"
@@ -228,4 +228,3 @@ async function main() {
 }
 
 main().catch((e) => fail(e?.stack || String(e)));
-

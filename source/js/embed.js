@@ -8,6 +8,44 @@
       let lastPostedHeight = 0;
       let rafId = 0;
 
+      const patchCoverHeader = () => {
+        try {
+          const header = document.getElementById('page-header');
+          if (!header) return;
+
+          const cs = window.getComputedStyle(header);
+          const bg = cs.backgroundImage || '';
+          if (!bg || bg === 'none') return;
+
+          const m = bg.match(/url\\((['\"]?)(.*?)\\1\\)/i);
+          const url = m?.[2];
+          if (!url) return;
+
+          header.classList.add('byu-has-cover');
+          header.style.setProperty('--byu-cover-bg', `url("${url.replace(/"/g, '\\"')}")`);
+
+          // Adapt aspect ratio to the real image size (portrait covers included).
+          const img = new Image();
+          img.decoding = 'async';
+          img.referrerPolicy = 'no-referrer';
+          img.onload = () => {
+            try {
+              const w = Number(img.naturalWidth || 0);
+              const h = Number(img.naturalHeight || 0);
+              if (w > 0 && h > 0) {
+                header.style.aspectRatio = `${w} / ${h}`;
+                schedulePostHeight();
+              }
+            } catch {
+              // ignore
+            }
+          };
+          img.src = url;
+        } catch {
+          // ignore
+        }
+      };
+
       const postHeight = () => {
         try {
           const rawHeight = Math.max(
@@ -64,10 +102,12 @@
       };
 
       patchLinks();
+      patchCoverHeader();
       schedulePostHeight();
 
       const obs = new MutationObserver(() => {
         patchLinks();
+        patchCoverHeader();
         schedulePostHeight();
       });
       obs.observe(document.body, { childList: true, subtree: true });

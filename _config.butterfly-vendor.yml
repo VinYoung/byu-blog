@@ -26,7 +26,9 @@ avatar:
 
 # Post cover / top banner
 disable_top_img: false
-default_top_img: https://storage-blog.byu-young.top/img/web/title_page.JPG
+# If a post/page doesn't set its own `top_img`, keep it as a plain color banner.
+# (Index page uses `index_img` below.)
+default_top_img:
 
 # The banner image of index page
 index_img: https://storage-blog.byu-young.top/img/web/title_page.JPG

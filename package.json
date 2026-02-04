@@ -6,13 +6,21 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "import:md": "node scripts/import-md-to-post.mjs",
+    "import:md": "node tools/import-md-to-post.mjs",
+    "import:web": "node tools/importer/server.mjs",
     "server": "hexo server"
   },
   "hexo": {
     "version": "8.1.1"
   },
+  "devDependencies": {
+    "hexo-renderer-pug": "^3.0.0"
+  },
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "@aws-sdk/client-s3": "^3.758.0",
     "hexo": "^8.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
@@ -23,8 +31,5 @@
     "hexo-renderer-stylus": "^3.0.1",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^1.0.0"
-  },
-  "devDependencies": {
-    "hexo-renderer-pug": "^3.0.0"
   }
 }
