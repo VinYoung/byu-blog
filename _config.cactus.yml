@@ -1,0 +1,16 @@
+# Minimal theme config: hide nav, sidebar and social links.
+
+nav: {}
+
+social_links: []
+
+logo:
+  enabled: false
+
+tags_overview: false
+
+posts_overview:
+  show_all_posts: false
+  post_count: 5
+  sort_updated: false
+

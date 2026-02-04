@@ -1,0 +1,15 @@
+/* Byu custom tweaks for Butterfly theme */
+
+/* Make the reading area wider (content ~75% + aside on the right) */
+@media (min-width: 1200px) {
+  .layout {
+    max-width: 75vw !important;
+  }
+}
+
+@media (min-width: 2000px) {
+  .layout {
+    max-width: 75vw !important;
+  }
+}
+
