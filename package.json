@@ -6,8 +6,6 @@
     "build": "hexo generate",
     "clean": "hexo clean",
     "deploy": "hexo deploy",
-    "import:md": "node tools/import-md-to-post.mjs",
-    "import:web": "node tools/importer/server.mjs",
     "server": "hexo server"
   },
   "hexo": {
@@ -17,10 +15,6 @@
     "hexo-renderer-pug": "^3.0.0"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "multer": "^1.4.5-lts.1",
-    "@aws-sdk/client-s3": "^3.758.0",
     "hexo": "^8.0.0",
     "hexo-generator-archive": "^2.0.0",
     "hexo-generator-category": "^2.0.0",
