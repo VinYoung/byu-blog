@@ -9,8 +9,8 @@ tags:
   - Gemini
   - watermark
   - guide
-top_img: /img/post-cover.png
-cover: /img/post-cover.png
+top_img: https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png
+cover: https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png
 ---
 
 # Pure App Guide: How to Clean Up NanoBanana and Gemini Images
@@ -54,7 +54,7 @@ On the home screen, tap the main button in the center and select the images you 
 - It works best when a batch comes from the same source
 - If this is your first time, test with a few images first
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png" alt="Pure app home screen" width="360" />
 
 ## Step 2: Wait while the batch is processed
 
@@ -68,7 +68,7 @@ You can see:
 
 There is no manual box selection and no extra parameter tuning required.
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/processing-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/processing-20260331.png" alt="Pure app processing screen" width="360" />
 
 ## Step 3: Review the batch results
 
@@ -81,7 +81,7 @@ This screen is useful for two things:
 
 If you processed many images at once, review a few representative examples before saving everything.
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/batch-preview-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/batch-preview-20260331.png" alt="Pure app batch preview" width="360" />
 
 ## Step 4: Open one image and save it to Photos
 
@@ -95,7 +95,7 @@ When checking the result, focus on:
 
 If the result looks right, save it directly from the preview.
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/preview-save-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/preview-save-20260331.png" alt="Pure app preview and save screen" width="360" />
 
 ## A safer way to use it
 

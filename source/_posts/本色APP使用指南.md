@@ -9,8 +9,8 @@ tags:
   - Gemini
   - 去水印
   - 使用指南
-top_img: /img/post-cover.png
-cover: /img/post-cover.png
+top_img: https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png
+cover: https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png
 ---
 
 # 本色 APP 使用指南：如何处理 NanoBanana / Gemini 图片水印
@@ -54,7 +54,7 @@ cover: /img/post-cover.png
 - 更适合成批处理同来源图片
 - 如果是第一次使用，建议先拿 2 到 3 张图测试
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/home-20260331.png" alt="本色 APP 首页" width="360" />
 
 ## 第 2 步：等待批量处理
 
@@ -68,7 +68,7 @@ cover: /img/post-cover.png
 
 这一阶段不需要手动框选，也不需要额外调节参数。
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/processing-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/processing-20260331.png" alt="本色 APP 批量处理中" width="360" />
 
 ## 第 3 步：批量预览处理结果
 
@@ -81,7 +81,7 @@ cover: /img/post-cover.png
 
 如果你一次处理了很多图片，建议先抽查几张最典型的内容，再决定是否整批保存。
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/batch-preview-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/batch-preview-20260331.png" alt="本色 APP 处理结果批量预览" width="360" />
 
 ## 第 4 步：查看单张并保存到相册
 
@@ -95,7 +95,7 @@ cover: /img/post-cover.png
 
 确认没问题后，就可以直接点击保存。
 
-![](https://storage-blog.byu-young.top/img/uploads/pure-app-guide/preview-save-20260331.png)
+<img src="https://storage-blog.byu-young.top/img/uploads/pure-app-guide/preview-save-20260331.png" alt="本色 APP 预览和保存" width="360" />
 
 ## 更稳妥的使用方式
 
