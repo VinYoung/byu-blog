@@ -4,12 +4,10 @@ if theme.aside.card_tools && theme.aside.card_tools.enable
       i.fas.fa-screwdriver-wrench
       span= theme.aside.card_tools.title || 'Tools'
     if theme.aside.card_tools.items && theme.aside.card_tools.items.length
-      .tool-links
+      .tool-grid
         each item in theme.aside.card_tools.items
-          a.tool-link(href=item.link target="_blank" rel="noopener noreferrer")
-            if item.icon
-              img.tool-link-icon(src=url_for(item.icon) alt=item.name)
-            .tool-link-body
-              .tool-link-name= item.name
-              if item.description
-                .tool-link-description= item.description
+          a.tool-grid-item(href=item.link target="_blank" rel="noopener noreferrer" title=item.name)
+            .tool-grid-icon-wrap
+              if item.icon
+                img.tool-grid-icon(src=url_for(item.icon) alt=item.name)
+            .tool-grid-name= item.name
