@@ -51,6 +51,14 @@ aside:
       enable: false
   card_announcement:
     enable: false
+  card_tools:
+    enable: true
+    title: 工具网站
+    items:
+      - name: Nanobanana 水印移除
+        link: https://pure.byu-young.top/
+        icon: /img/tools/nanobanana.png
+        description: 去除 NanoBanana 生成图片水印
   card_recent_post:
     enable: true
     limit: 6

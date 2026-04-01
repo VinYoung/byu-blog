@@ -13,3 +13,50 @@
   }
 }
 
+
+.card-tools .tool-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.card-tools .tool-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-radius: 16px;
+  background: rgba(64, 158, 255, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.card-tools .tool-link:hover {
+  transform: translateY(-1px);
+  background: rgba(64, 158, 255, 0.14);
+  box-shadow: 0 8px 20px rgba(31, 41, 55, 0.08);
+}
+
+.card-tools .tool-link-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  flex: 0 0 48px;
+}
+
+.card-tools .tool-link-body {
+  min-width: 0;
+}
+
+.card-tools .tool-link-name {
+  color: var(--font-color);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.card-tools .tool-link-description {
+  margin-top: 4px;
+  color: var(--font-color);
+  opacity: 0.72;
+  font-size: 0.88rem;
+  line-height: 1.5;
+}
